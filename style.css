@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    font-family: Heebo;
+    font-weight: 600;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    font-size: 16px;
+    width: 100vw;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+.nav-list{
+    list-style-type: none;
+    gap: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Heebo;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.banner h1{
+    width: 600px;
+    font-weight: 800;
+    color: #21243D;
+    font-size: 44px;
+}
+#banner-para{
+    width: 500px;
+}
+.banner-button{
+    border: none;
+    text-align: center;
+    padding: 12px 15px;
+    color: white;
+    background-color: #FF6464;
+    width: 175px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.banner-text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 20em;
+}
+.banner-button:hover{
+    transform: scale(1.25);
+    font-size: 14px;
+}
+@media screen and (max-width:842px){
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-text{
+        align-items: center;
+        text-align: center;
+        gap: 20px 0;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:591px){
+    .nav{
+        padding: 20px 30px;
+        text-align: center;
+        justify-content: center;
+    }
+}
